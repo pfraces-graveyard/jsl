@@ -1,6 +1,6 @@
 {
   "name": "jslib",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "general purpose javascript library",
   "main": "./lib/index.js",
   "dependencies": {},
