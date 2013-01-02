@@ -1,0 +1,21 @@
+{
+  "name": "jslib",
+  "version": "0.1.0",
+  "description": "general purpose javascript library",
+  "main": "./lib/index.js",
+  "dependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pfraces/jslib.git"
+  },
+  "keywords": [
+    "javascript",
+    "library",
+    "traverse"
+  ],
+  "author": "Pau Fracés",
+  "license": "MIT"
+}
