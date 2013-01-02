@@ -3,15 +3,16 @@
 <p>General purpose JavaScript Library</p>             </td>             <td class="code">               <div class="highlight"><pre></pre></div>             </td>           </tr>                               <tr id="section-2">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-2">&#182;</a>               </div>               <h1>Constructor</h1>             </td>             <td class="code">               <div class="highlight"><pre></pre></div>             </td>           </tr>                               <tr id="section-3">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-3">&#182;</a>               </div>               <h2>jslib(entity)</h2>
 
 <p>Gets a JavaScript entity and returns an object with methods for dealing with
-that entity</p>             </td>             <td class="code">               <div class="highlight"><pre><span class="kd">var</span> <span class="nx">jslib</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">entity</span><span class="p">)</span> <span class="p">{</span>
+that entity</p>
+
+<p><code>entity</code>: <em>[Any]</em></p>             </td>             <td class="code">               <div class="highlight"><pre><span class="kd">var</span> <span class="nx">jslib</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">entity</span><span class="p">)</span> <span class="p">{</span>
   <span class="kd">var</span> <span class="nx">self</span> <span class="o">=</span> <span class="p">{};</span>
-  <span class="nx">self</span><span class="p">.</span><span class="nx">entity</span> <span class="o">=</span> <span class="nx">entity</span><span class="p">;</span></pre></div>             </td>           </tr>                               <tr id="section-4">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-4">&#182;</a>               </div>               <h1>Type detection and casts</h1>
+  <span class="nx">self</span><span class="p">.</span><span class="nx">entity</span> <span class="o">=</span> <span class="nx">entity</span><span class="p">;</span></pre></div>             </td>           </tr>                               <tr id="section-4">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-4">&#182;</a>               </div>               <h1>Type detection</h1>
 
 <p>References:</p>
 
 <ul>
 <li><a href="http://blog.niftysnippets.org/2010/09/say-what.html">http://blog.niftysnippets.org/2010/09/say-what.html</a></li>
-<li><a href="https://developer.mozilla.org/en-US/docs/DOM/NodeList">https://developer.mozilla.org/en-US/docs/DOM/NodeList</a></li>
 </ul>             </td>             <td class="code">               <div class="highlight"><pre></pre></div>             </td>           </tr>                               <tr id="section-5">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-5">&#182;</a>               </div>               <h2>jslib.isString()</h2>
 
 <p>Checks if the entity is a string</p>             </td>             <td class="code">               <div class="highlight"><pre>  <span class="nx">self</span><span class="p">.</span><span class="nx">isString</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
@@ -36,7 +37,13 @@ that entity</p>             </td>             <td class="code">               <d
 
 <p>Checks if the entity is a function</p>             </td>             <td class="code">               <div class="highlight"><pre>  <span class="nx">self</span><span class="p">.</span><span class="nx">isFunction</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
     <span class="k">return</span> <span class="k">typeof</span> <span class="nx">self</span><span class="p">.</span><span class="nx">entity</span> <span class="o">===</span> <span class="s1">&#39;function&#39;</span><span class="p">;</span>
-  <span class="p">}</span></pre></div>             </td>           </tr>                               <tr id="section-11">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-11">&#182;</a>               </div>               <h2>jslib.toArray()</h2>
+  <span class="p">}</span></pre></div>             </td>           </tr>                               <tr id="section-11">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-11">&#182;</a>               </div>               <h1>Type casting</h1>
+
+<p>References:</p>
+
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/DOM/NodeList">https://developer.mozilla.org/en-US/docs/DOM/NodeList</a></li>
+</ul>             </td>             <td class="code">               <div class="highlight"><pre></pre></div>             </td>           </tr>                               <tr id="section-12">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-12">&#182;</a>               </div>               <h2>jslib.toArray()</h2>
 
 <p>Returns the entity casted to a standard Array so you can use the Array
 methods: forEach(), map(), filter(), ...</p>             </td>             <td class="code">               <div class="highlight"><pre>  <span class="nx">self</span><span class="p">.</span><span class="nx">toArray</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
@@ -47,9 +54,22 @@ methods: forEach(), map(), filter(), ...</p>             </td>             <td c
         <span class="k">return</span> <span class="nx">item</span><span class="p">;</span>
       <span class="p">});</span>
     <span class="p">}</span>
-  <span class="p">}</span></pre></div>             </td>           </tr>                               <tr id="section-12">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-12">&#182;</a>               </div>               <h1>Working with Objects and Arrays</h1>             </td>             <td class="code">               <div class="highlight"><pre></pre></div>             </td>           </tr>                               <tr id="section-13">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-13">&#182;</a>               </div>               <h2>jslib.traverse()</h2>
+  <span class="p">}</span></pre></div>             </td>           </tr>                               <tr id="section-13">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-13">&#182;</a>               </div>               <h1>Objects and Arrays</h1>             </td>             <td class="code">               <div class="highlight"><pre></pre></div>             </td>           </tr>                               <tr id="section-14">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-14">&#182;</a>               </div>               <h2>jslib.traverse(opts, handler)</h2>
 
-<p>Traverses recursively through all the child nodes of <code>entity</code></p>             </td>             <td class="code">               <div class="highlight"><pre>  <span class="nx">self</span><span class="p">.</span><span class="nx">traverse</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">opts</span><span class="p">,</span> <span class="nx">handler</span><span class="p">)</span> <span class="p">{</span>
+<p>Traverses recursively through all the child nodes of <code>entity</code></p>
+
+<p><code>opts</code> <em>(Optional)</em>: <em>[Object]</em></p>
+
+<ul>
+<li><code>opts.path</code>: <em>[String]</em> Path to follow when recursing</li>
+<li><code>opts.before</code>: <em>[Function]</em> Called before each node children traversal</li>
+<li><code>opts.after</code>: <em>[Function]</em> Called after each node children traversal</li>
+</ul>
+
+<p><code>handler</code>: <em>[Function]</em> Called on each node</p>
+
+<p>All the handler functions (<code>opts.before</code>, <code>opts.after</code> and <code>handler</code>) gets
+the node being traversed (not the root node) as an argument</p>             </td>             <td class="code">               <div class="highlight"><pre>  <span class="nx">self</span><span class="p">.</span><span class="nx">traverse</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">opts</span><span class="p">,</span> <span class="nx">handler</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">if</span> <span class="p">(</span><span class="nx">opts</span><span class="p">.</span><span class="nx">before</span><span class="p">)</span> <span class="nx">opts</span><span class="p">.</span><span class="nx">before</span><span class="p">(</span><span class="nx">self</span><span class="p">.</span><span class="nx">entity</span><span class="p">);</span>
     <span class="nx">handler</span><span class="p">(</span><span class="nx">self</span><span class="p">.</span><span class="nx">entity</span><span class="p">);</span>
     <span class="p">(</span><span class="nx">opts</span><span class="p">.</span><span class="nx">path</span> <span class="o">?</span> <span class="nx">jslib</span><span class="p">(</span><span class="nx">self</span><span class="p">.</span><span class="nx">entity</span><span class="p">[</span><span class="nx">opts</span><span class="p">.</span><span class="nx">path</span><span class="p">])</span> <span class="o">:</span> <span class="nx">self</span><span class="p">)</span>

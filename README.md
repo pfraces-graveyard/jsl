@@ -7,6 +7,7 @@ General purpose JavaScript Library
 *   Less than 200 lines of annotated source
 *   Object traversal
 *   Chainable API
+*   Dependency-free
 
 # Example
 
