@@ -1,7 +1,7 @@
 {
   "name": "jsl",
   "version": "0.1.0",
-  "description": "General-purpose JavaScript library",
+  "description": "general-purpose javascript library",
   "main": "./lib/index.js",
   "dependencies": {},
   "scripts": {
@@ -12,9 +12,7 @@
     "url": "https://github.com/pfraces/jsl.git"
   },
   "keywords": [
-    "general-purpose",
-    "javascript",
-    "library"
+    "general-purpose"
   ],
   "author": "Pau Fracés",
   "license": "MIT"
