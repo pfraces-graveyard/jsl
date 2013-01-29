@@ -34,9 +34,7 @@ Jsl.prototype.toArray = function () {
   if (this.isArray()) return this.obj;
   if (this.isFunction()) return jsl(this.obj()).toArray();
   if (this.isScalar() || !this.obj.length) return [].concat(this.obj);
-  return Array.prototype.map.call(this.obj, function (item) {
-    return item;
-  });
+  return Array.prototype.slice.call(this.obj);
 }
 
 Jsl.prototype.traverse = function (opts) {
