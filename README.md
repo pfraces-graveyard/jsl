@@ -19,7 +19,7 @@ _TODO..._
 
 Choose one:
 
-    $ component pfraces/jsl
+    $ component install pfraces/jsl
     $ npm install jsl
 
 # Status
