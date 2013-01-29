@@ -17,12 +17,9 @@ _TODO..._
 
 # Install
 
-Through **npm**:
+Choose one:
 
     $ component pfraces/jsl
-
-Through **component**
-
     $ npm install jsl
 
 # Status
