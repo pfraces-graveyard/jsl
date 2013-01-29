@@ -1,6 +1,6 @@
-module.exports = function (obj) {
+var jsl = module.exports = function (obj) {
   return new Jsl(obj);
-}
+};
 
 var Jsl = function (obj) {
   this.obj = obj;
